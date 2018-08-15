@@ -5,6 +5,12 @@ class CreateCostumeStores < ActiveRecord::Migration[5.1]
   def change 
     create_table :stores do |t|
       t.text :name 
+      t.string :location
+      t.integer :inventory 
+      t.integer :employees 
+      t.boolean :business
+      t.timestamp :opening_time
+      t.timestamp :closing_time
       t.float :price
       t.text  :size 
       t.string :image_url
