@@ -2,3 +2,4 @@
 # It should inherit from ActiveRecord::Base
 Class Costume < ActiveRecord::Base 
 end 
+end 
