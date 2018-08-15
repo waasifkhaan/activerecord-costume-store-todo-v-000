@@ -12,5 +12,8 @@ Class CreateCostumes < ActiveRecord::Migration[5.1]
 def change 
   create_table :costumes |t|
   t.string = :name 
-  t.Integer = :price
+  t.integer = :price
+  t.string = :size 
+  t.string = :img_url
+end 
   
