@@ -7,3 +7,10 @@
 # Define a change method in which to do the migration
 # In this change method, create columns with the correct names and 
 # value types according to the spec
+Class CreateCostumes < ActiveRecord::Migration[5.1]
+
+def change 
+  create_table :costumes |t|
+  t.string = :name 
+  t.Integer = :price
+  
