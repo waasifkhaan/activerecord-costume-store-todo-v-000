@@ -2,7 +2,7 @@
 class CreateHauntedHouses < ActiveRecord::Migration[5.1]
 
   def change 
-    create_table :houses do |t|
+    create_table :haunted_houses do |t|
       t.text :name 
       t.string :location 
       t.text :theme
